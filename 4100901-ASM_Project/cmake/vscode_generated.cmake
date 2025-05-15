@@ -23,7 +23,10 @@ set(linker_script_SRC ${linker_script_SRC}
 # Sources
 set(sources_SRCS ${sources_SRCS}
     
-	${CMAKE_CURRENT_SOURCE_DIR}/Src/workshop.s
+	# ${CMAKE_CURRENT_SOURCE_DIR}/Src/workshop.c
+	# ${CMAKE_CURRENT_SOURCE_DIR}/Src/workshop_uart.c
+	# ${CMAKE_CURRENT_SOURCE_DIR}/Src/workshop.s
+	${CMAKE_CURRENT_SOURCE_DIR}/Src/workshop_pwm.c
 	${CMAKE_CURRENT_SOURCE_DIR}/Src/syscall.c
 	${CMAKE_CURRENT_SOURCE_DIR}/Src/sysmem.c
 	${CMAKE_CURRENT_SOURCE_DIR}/Startup/startup_stm32l476rgtx.s
